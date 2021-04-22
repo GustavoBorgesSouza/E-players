@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de times</title>
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/cadastrot.css">
+    <link rel="stylesheet" href="css/cadastroj.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
@@ -26,20 +26,28 @@
     <main>
 
         <section class="container_banner">
-            <h1>Cadastro de times</h1>
+            <h1>Cadastro de jogadores</h1>
         </section>
 
         <section class="content content_container">
             <div class="cadastro_container">
                 <div class="preencher">
-                <span>Nome da Equipe</span>
-                <input class="escolher_nome" type="text" name="nome da equipe" id="nome">
+                <span>Nome do jogador</span>
+                <input type="text" name="nome do jogador" id="nome">
                 </div>
                 <div class="preencher">
-                <span>Emblema</span>
-                <input class="escolher_img" type="image" src="escolher imagem" alt="Escolher imagem">
+                <span>E-mail</span>
+                <input type="email" name="email" id="nome">
                 </div>
-                <button type="button">Cadastrar</button>
+                <div class="preencher">
+                <span>Senha</span>
+                <input type="password" name="password" id="nome">
+                </div>
+                <div class="preencher_equipe">
+                <span>Equipe</span>
+                <input type="text" name="equipe" id="nome">
+                </div>
+                <button>Cadastrar</button>
             </div>
 
             <h2>Lista de times</h2>
@@ -49,47 +57,16 @@
                     <th>Nome do jogador</th>
                     <th>Equipe</th>
                 </tr>
-                <tr class="equipe">
+                <tr>
                     <td>Thiago</td>
-                    <td><img src="assets_/fla-logo.png" alt=""></td>
+                    <td>SENAI Cythechs</td>
                 </tr>
-                <tr class="equipe">
+                <tr>
                     <td>Odirlei</td>
-                    <td><img src="assets_/fla-logo.png" alt=""></td>
+                    <td>SENAI Cythechs</td>
                 </tr>
             </table>
-
-            <!-- alternativa tabela usando div -->
-
-            <!-- <div class="container_lista">
-                <div class="nome_emblema">
-                    <div class="nome container_nome">
-                    <h3>Nome da equipe</h3>
-                    </div>
-                    <div class="emblema container_emblema">
-                    <h3>Emblema</h3>
-                    </div>
-                </div>
-
-                <div class="equipe">
-                    <div class="nome container_nome">
-                    <h3>SENAI cythechs</h3>
-                    </div>
-                    <div class="emblema container_emblema">
-                    <img src="assets_/fla-logo.png" alt="">
-                    </div>
-                </div>
-
-                <div class="equipe">
-                    <div class="nome container_nome">
-                    <h3>Flamengo</h3>
-                    </div>
-                    <div class="emblema container_emblema">
-                    <img src="assets_/fla-logo.png" alt="">
-                    </div>
-                </div> -->
-                
-            </div>
+            
         </section>
 
     </main>
