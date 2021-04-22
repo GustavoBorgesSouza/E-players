@@ -196,4 +196,38 @@ td{
 }
 
 
+@media(max-width: 420px){
+    .container{
+        width: 80vw;
+    }
 
+ .container_banner h1{
+     font-size: 26px;
+ }
+
+ .cadastro_container{
+     width: 80vw;
+ }
+
+ .cadastro_container input {
+     width: 80%;
+ }
+
+ .preencher{
+     width: 100%;
+     margin: 20px 0 20px 20%;
+ }
+
+ .preencher_equipe{
+     width: 100%;
+     margin-left: 20%;
+ }
+
+ table{
+     width: 80vw;
+     height: 196px;
+ }
+
+ td{
+     font-size: 18px;
+ }
