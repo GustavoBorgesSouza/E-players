@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de times</title>
+    <script src="https://kit.fontawesome.com/ab7fe2068a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/cadastroj.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -13,13 +14,16 @@
     <header>
         <div class="container container_header">
             <a href="#container_banner"><img src="assets_/logo.svg" alt="logo"></a>
-            <nav class="menu_header">
-                <a href="#container_banner">Início</a>
-                <a href="#horarios">Horários</a>
-                <a href="#">Campeonato</a>
-                <a href="#">Resultados</a>
-                <a href="#container_noticias">Notícias</a>
+            <nav id="links" class="menu_header">
+                <a href="#container_banner"  onclick="botaoDoMenu()">Início</a>
+                <a href="#horarios"  onclick="botaoDoMenu()">Horários</a>
+                <a href="#"  onclick="botaoDoMenu()">Campeonato</a>
+                <a href="#"  onclick="botaoDoMenu()">Resultados</a>
+                <a href="#container_noticias"  onclick="botaoDoMenu()">Notícias</a>
             </nav>
+            <a class="btn_menu" href="javascript:void(0)" onclick="botaoDoMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
         </div>
     </header>
 
@@ -108,6 +112,17 @@
             </div>
         </div>
     </footer>
-    
+    <script>
+        function botaoDoMenu() {
+            var menu = document.getElementById("links");
+            if (menu.style.display === "flex") {
+                menu.style.display = "none"
+                // esconder menu
+            } else{
+                menu.style.display = "flex"
+                // mostre menu
+            }
+        }
+    </script>
 </body>
 </html>
